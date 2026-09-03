@@ -4,16 +4,16 @@
 
 }
 body{
+
+
     margin: 0;
     width: 100vw;
+
     height: 100vh;
     overflow: hidden;
-
-
-    
-
-    background-image: url("Images/Untitled design.png");
+     background-image: url("Images/Untitled design.png");
     background-size: 100% 100%;
+    
     background-position: center;
     background-repeat: no-repeat;
 
@@ -27,12 +27,14 @@ body{
     padding: 1rem;
 
 }
+
 video{
     width: 100%;
     max-height: 400px;
 
     display: block;
     object-fit: contain;
+
 }
 .gallery{
 
@@ -90,8 +92,9 @@ video{
     align-items: center;
 
     padding: 0 1rem;
-    color: white;
-    background-color: rgba(176, 85, 0, 0.503);
+    color: rgb(255, 244, 220);
+
+    background-color: rgb(74, 56, 45);
     backdrop-filter: blur(10px);
 
 }
@@ -100,6 +103,7 @@ video{
 
     position: absolute;
     top: 80px;
+
     left: 20px;
 
 
@@ -118,12 +122,12 @@ video{
     border: none;
     border-radius: 1rem;
 
-    background-color: rgb(248, 158, 158);
-
+    background-color: rgb(243, 229, 200);
+    border-color: rgb(216, 195, 165);
 }
 
 #apps button:hover{
-    background-color: rgba(255, 122, 122, 0.8);
+    background-color: rgb(255, 244, 220);
 }
 
 
@@ -134,6 +138,7 @@ video{
     width: 500px;
     max-height: 80vh;
     background-color: rgba(255, 255, 255, 0.9);
+
     border-radius: 1rem;
     overflow: hidden;
 
@@ -167,12 +172,13 @@ video{
 
     width: 28px;
     height: 28px;
+
     border: none;
     border-radius: 1rem;
 
 
     background-color: #ff5f57;
-    color: white;
+    color: rgb(239, 6, 6);
     font-size: 20px;
 
     cursor: pointer;
@@ -197,6 +203,7 @@ video{
     width: 100%;
     max-height: 60vh;
     object-fit: contain;
+
     border-radius: 10px;
 
 }
@@ -207,6 +214,7 @@ video{
     display: flex;
     gap: 8px;
     
+
 }
 
 
@@ -234,6 +242,6 @@ video{
 }
 
 
-.window-bar button:hover {
-    background-color: #ff3b30;
+.window-bar button {
+    color: rgb(74, 56, 45);
 }

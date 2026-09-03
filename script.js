@@ -71,6 +71,7 @@ function openWindow(id){
     const appWindow = document.getElementById(id);
 
     appWindow.style.display = "block";
+
     appWindow.style.left =
         (window.innerWidth - appWindow.offsetWidth) / 2 + "px";
 
@@ -87,10 +88,12 @@ function closeWindow(id) {
 }
 
 function playVideo(video){
+
     const player = document.getElementById("player");
 
     player.src = video;
     player.play();
+    
 
 }
 
