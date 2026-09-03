@@ -1,8 +1,108 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+  </style>
 
-  <body>
-  
+
+
+
+  <body id="background">
+    
+    <div id="top-bar">
+      <p>PheobeOS</p>
+
+      <p id="time">
+        
+      </p>
+
+
+    </div>  
+
+    <div id="apps">
+      <button onclick="openWindow('video-window')">
+
+        🎬 <br> Video
+          
+
+
+      </button>
+
+
+      <button onclick="openWindow('gallery-window')"> 
+        🖼️ <br> Gallery 
+      
+      </button>
+
+      <div class="window" id="video-window">
+
+        <div class="window-bar">
+          <span>Video Player</span>
+          <button onclick="closeWindow('video-window')" id="close-btn">
+            x
+          </button>
+
+
+
+        </div>
+        <div class="video-player">
+          <video id="player" controls>
+            Can't play video. Change your Browser!
+          </video>
+
+          <div id="video-list">
+            <button onclick="playVideo('videos/reelsaveapp_1788467991.mp4')">
+              Video 1 
+            </button> 
+            <button onclick="playVideo('videos/reelsaveapp_1788468080.mp4')">
+             Video 2 
+            </button> 
+            <button onclick="playVideo('videos/reelsaveapp_1788468210.mp4')"> 
+              Video 3 
+            </button>
+            <button onclick="playVideo('videos/reelsaveapp_1788468819.mp4')">
+              Video 4
+            </button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="window" id="gallery-window">
+        
+        
+        <div class="window-bar"> 
+          <span>Gallery</span> 
+          <button onclick="closeWindow('gallery-window')"> × </button> 
+
+        </div> 
+
+
+        <div class="gallery"> 
+          <img src="Images/Screenshot 2026-09-01 at 11.48.19 PM.png"> 
+          <img src="Images/Screenshot 2026-09-01 at 11.48.36 PM.png"> 
+          <img src="Images/Screenshot 2026-09-01 at 11.48.49 PM.png">
+          <img src="Images/Screenshot 2026-09-01 at 11.49.16 PM.png"> 
+          <img src="Images/Screenshot 2026-09-04 at 1.17.42 AM.png"> 
+          <img src="Images/Screenshot 2026-09-04 at 1.18.02 AM.png"> 
+          
+        </div>
+
+    </div>
+
+
+
+    
+    
+      
+    
+   
+    
+
   </body>
+  <script src="script.js"></script>
 
 </html>
